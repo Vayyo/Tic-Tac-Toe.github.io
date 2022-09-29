@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="index.css" />
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <section class="container">
+      <h2 class="title">Tic-Tac-Toe</h2>
+      <div class="game-board">
+        <div class="marking row"></div>
+        <div class="marking column row"></div>
+        <div class="marking column row"></div>
+        <div class="marking row"></div>
+        <div class="marking column row"></div>
+        <div class="marking column row"></div>
+        <div class="marking"></div>
+        <div class="marking column"></div>
+        <div class="marking column"></div>
+      </div>
+      <div class="scoreboard">
+        <div class="details">
+          <h4 class="name">Computer</h4>
+          <p class="score" id="computer">0</p>
+          <i class="fa-solid fa-comment-dots thinking"></i>
+        </div>
+        <div class="details">
+          <h4 class="name">Tie</h4>
+          <p class="score" id="tie">0</p>
+        </div>
+        <div class="details">
+          <h4 class="name">Player</h4>
+          <p class="score" id="player">0</p>
+        </div>
+      </div>
+      <div class="block"></div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+/* Global Style */
+html {
+  scroll-behavior: smooth;
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: cursive, sans-serif;
+  color: #fff;
+}
+
+.container {
+  width: 100vw;
+  max-width: 100%;
+  min-height: 100vh;
+  background-color: #161616;
+  background-image: url(sand.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+}
+.title {
+  font-size: 1.8rem;
+}
+.game-board {
+  width: min(80%, 350px);
+  font-size: 4rem;
+  margin: 2rem auto;
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  user-select: none;
+}
+.marking {
+  aspect-ratio: 1/1;
+}
+
+.row {
+  border-bottom: 2px solid #fff;
+}
+.column {
+  border-left: 2px solid #fff;
+}
+.scoreboard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 10vmin;
+}
+.scoreboard .name {
+  text-decoration: underline;
+  letter-spacing: 0.1em;
+  text-decoration-thickness: 0.12em;
+  margin-bottom: 0.3rem;
+}
+.scoreboard .score {
+  font-size: 1.5rem;
+  -webkit-transition: color 500ms ease, -webkit-transform 500ms ease;
+  transition: color 500ms ease, -webkit-transform 500ms ease;
+  -o-transition: transform 500ms ease, color 500ms ease;
+  transition: transform 500ms ease, color 500ms ease;
+  transition: transform 500ms ease, color 500ms ease,
+    -webkit-transform 500ms ease;
+}
+.block {
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.scoreboard .details {
+  position: relative;
+}
+.thinking {
+  visibility: hidden;
+  font-size: 2.1rem;
+  position: absolute;
+  bottom: 100%;
+  left: 80%;
+  -webkit-animation: fade 1000ms ease-in infinite;
+  animation: fade 1000ms ease-in infinite;
+}
+@-webkit-keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
